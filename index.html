@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Ordering System</title>
-    <link
-      rel="shortcut icon"
-      href="6c3056665f8945b573189c004e90e2728a92eb63.png"
-      type="image/x-icon"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Odering System</title>
+    <link rel="shortcut icon" href="img/My LOGO.jpg" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Google Font is liked here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <!-- Css is liked here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This section the Side Bar, Nav and Hero Image -->
     <section class="main">
-      <div class="side-bar">
-        <div class="close">✖</div>
-        <img src="https://i.postimg.cc/28QjcPkr/6c3056665f8945b573189c004e90e2728a92eb63.png" alt="logo" />
-        <p class="small-heading">Menu</p>
-        <p class="slogan">"Where every flavor tells a story"</p>
-        <hr />
-        <div class="quick-links">
-          <p class="small-heading mar-bottom">Quick Links</p>
-          <ul>
-            <li><a>Home</a></li>
-            <li><a>Your Order</a></li>
-            <li><a>Wallet</a></li>
-            <li><a>Profile</a></li>
-            <li><a>Logout</a></li>
-            <li><a>Menu</a></li>
-          </ul>
+        <div class="side-bar">
+            <div class="close">
+                &#10006;
+            </div>
+            <img src="https://i.postimg.cc/28QjcPkr/6c3056665f8945b573189c004e90e2728a92eb63.png" alt="logo">
+            <p class="small-heading">Your Restaurant Menu</p>
+            <p class="slogan">Your Slogan</p>
+            <hr>
+            <div class="quick-links">
+                <p class="small-heading mar-bottom">Quick Links</p>
+                <ul>
+                    <li><a href="">1. Home</a></li>
+                    <li><a href="">2. Your Order</a></li>
+                    <li><a href="">3. Wallet</a></li>
+                    <li><a href="">4. Profile</a></li>
+                    <li><a href="">5. Logout</a></li>
+                    <li onclick="secondScreen()"><a>6. Menu/secondScreen</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="more-about-us">
+                <p class="small-heading mar-bottom">More About Us</p>
+                <ul>
+                    <li><a href="">1. Our Blog</a></li>
+                    <li><a href="">2. Upcoming Dishes</a></li>
+                    <li><a href="">3. Our Story</a></li>
+                    <li><a href="">4. Social Media Links</a></li>
+                </ul>
+            </div>
         </div>
-        <hr />
-        <div class="more-about-us">
-          <p class="small-heading mar-bottom">More About Us</p>
-          <ul>
-            <li><a>Our Blog</a></li>
-            <li><a>Upcoming Dishes</a></li>
-            <li><a>Our Story</a></li>
-            <li><a>Social Media Links</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="main-content">
-        <div class="nav-element">
-          <div class="hamburger">
-            <div class="open">&#9776;</div>
-          </div>
-          <div class="search">
-            <form>
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" placeholder="Search Food Item" />
-            </form>
-          </div>
-          <button class="red-btn signup">Signup</button>
-          <button class="red-btn">Login</button>
-          <img
-            src="https://i.postimg.cc/28QjcPkr/6c3056665f8945b573189c004e90e2728a92eb63.png"
-            alt=""
-            class="small-logo"
-          />
-        </div>
-        <div class="helping-class"></div>
-        <div class="hero-img">
-          <img
-            src="https://i.postimg.cc/rzX6CF0x/bfaad74b76ba1256d10f8af33fd5e08b7574087c.png"
-            alt=""
-            class="main_hero_img"
-          />
-        </div>
+        <div class="main-content">
+            <div class="nav-element">
+                <div class="hamburger">
+                    <div class="open">
+                        &#9776;
+                    </div>
+                </div>
+                <div class="search">
+                    <form>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search Food Item">
+                    </form>
+                </div>
+                <button class="red-btn signup">Signup</button>
+                <button class="red-btn">Login</button>
+                <img src="https://i.postimg.cc/28QjcPkr/6c3056665f8945b573189c004e90e2728a92eb63.png" alt="" class="small-logo">
+            </div>
+            <div class="helping-class">
+                
+            </div>
+            <div class="hero-img">
+                <img src="https://i.postimg.cc/rzX6CF0x/bfaad74b76ba1256d10f8af33fd5e08b7574087c.png" alt="" class="main_hero_img">
+            </div>
 
-        <section class="menu">
-          <p class="small-heading">Menu</p>
-          <div class="card-section"></div>
-        </section>
-      </div>
+            <section class="menu">
+                <p class="small-heading">Menu</p>
+                <div class="card-section">
+                
+                </div>
+            </section>
+
+        </div>
     </section>
-    <script src="index.js" crossorigin="anonymous"></script>
-  </body>
+
+    <!-- JavaScript Here -->
+    <script src="index.js"></script>
+
+    <!-- Font awsome icon liked here -->
+    <script src="https://kit.fontawesome.com/a6110cc4e0.js" crossorigin="anonymous"></script>
+
+</body>
 </html>
